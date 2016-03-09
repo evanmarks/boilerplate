@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ADMIN Boilerplate</title>
+    <%= stylesheet_link_tag 'application', media: 'all' %>
+
+    <%= javascript_include_tag 'application' %>
+    <%= javascript_include_tag "#{params[:controller]}/#{params[:action]}" if Rails.application.assets.find_asset("#{params[:controller]}/#{params[:action]}.js") %>
+
+    <% if ENV['REACT_ON_RAILS_ENV'] == 'HOT' %>
+      <%= javascript_include_tag 'http://localhost:3500/vendor-bundle.js' %>
+      <%= javascript_include_tag 'http://localhost:3500/admin-bundle.js' %>
+    <% else %>
+      <%= javascript_include_tag 'webpack/vendor-bundle.js' %>
+      <%= javascript_include_tag 'webpack/admin-bundle.js' %>
+    <% end %>
+
+    <%= csrf_meta_tags %>
+  </head>
+
+  <body>
+    <%= render partial: 'shared/nav' %>
+    <%= yield %>
+  </body>
+</html>

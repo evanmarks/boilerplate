@@ -1,0 +1,9 @@
+# Basic procfile for dev work.
+
+rails: REACT_ON_RAILS_ENV=HOT rails s
+
+# Run the hot reload server for client development
+hot-assets: sh -c 'rm app/assets/javascripts/webpack/* || true && HOT_RAILS_PORT=3500 npm run hot-assets'
+
+# Keep the JS fresh for server rendering. Remove if not server rendering
+rails-server-assets: sh -c 'npm run build:dev:server'

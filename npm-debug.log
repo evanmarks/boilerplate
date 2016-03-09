@@ -1,0 +1,45 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/evan/.nvm/versions/node/v5.0.0/bin/node',
+1 verbose cli   '/Users/evan/.nvm/versions/node/v5.0.0/bin/npm',
+1 verbose cli   'run',
+1 verbose cli   'hot-assets' ]
+2 info using npm@3.3.6
+3 info using node@v5.0.0
+4 verbose run-script [ 'prehot-assets', 'hot-assets', 'posthot-assets' ]
+5 info lifecycle boilerplate@~prehot-assets: boilerplate@
+6 silly lifecycle boilerplate@~prehot-assets: no script for prehot-assets, continuing
+7 info lifecycle boilerplate@~hot-assets: boilerplate@
+8 verbose lifecycle boilerplate@~hot-assets: unsafe-perm in lifecycle true
+9 verbose lifecycle boilerplate@~hot-assets: PATH: /Users/evan/.nvm/versions/node/v5.0.0/lib/node_modules/npm/bin/node-gyp-bin:/Users/evan/Desktop/boilerplate/node_modules/.bin:/Users/evan/.rvm/gems/ruby-2.2.3@boilerplate/bin:/Users/evan/.rvm/gems/ruby-2.2.3@global/bin:/Users/evan/.rvm/rubies/ruby-2.2.3/bin:/Users/evan/.rvm/bin:/Users/evan/.nvm/versions/node/v5.0.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+10 verbose lifecycle boilerplate@~hot-assets: CWD: /Users/evan/Desktop/boilerplate
+11 silly lifecycle boilerplate@~hot-assets: Args: [ '-c', 'babel-node server-rails-hot.js' ]
+12 silly lifecycle boilerplate@~hot-assets: Returned: code: 1  signal: null
+13 info lifecycle boilerplate@~hot-assets: Failed to exec hot-assets script
+14 verbose stack Error: boilerplate@ hot-assets: `babel-node server-rails-hot.js`
+14 verbose stack Exit status 1
+14 verbose stack     at EventEmitter.<anonymous> (/Users/evan/.nvm/versions/node/v5.0.0/lib/node_modules/npm/lib/utils/lifecycle.js:233:16)
+14 verbose stack     at emitTwo (events.js:87:13)
+14 verbose stack     at EventEmitter.emit (events.js:172:7)
+14 verbose stack     at ChildProcess.<anonymous> (/Users/evan/.nvm/versions/node/v5.0.0/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+14 verbose stack     at emitTwo (events.js:87:13)
+14 verbose stack     at ChildProcess.emit (events.js:172:7)
+14 verbose stack     at maybeClose (internal/child_process.js:818:16)
+14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+15 verbose pkgid boilerplate@
+16 verbose cwd /Users/evan/Desktop/boilerplate
+17 error Darwin 14.5.0
+18 error argv "/Users/evan/.nvm/versions/node/v5.0.0/bin/node" "/Users/evan/.nvm/versions/node/v5.0.0/bin/npm" "run" "hot-assets"
+19 error node v5.0.0
+20 error npm  v3.3.6
+21 error code ELIFECYCLE
+22 error boilerplate@ hot-assets: `babel-node server-rails-hot.js`
+22 error Exit status 1
+23 error Failed at the boilerplate@ hot-assets script 'babel-node server-rails-hot.js'.
+23 error This is most likely a problem with the boilerplate package,
+23 error not with npm itself.
+23 error Tell the author that this fails on your system:
+23 error     babel-node server-rails-hot.js
+23 error You can get their info via:
+23 error     npm owner ls boilerplate
+23 error There is likely additional logging output above.
+24 verbose exit [ 1, true ]
